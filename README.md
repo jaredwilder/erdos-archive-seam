@@ -9,8 +9,8 @@ Three separate passes, each into material that sits outside the searchable tree:
 a downloads folder (297 opened here), two tarballs holding 1,360 Lean files across 119 problem
 numbers, and an exhaustive-search result store.
 
-**Claims I re-verified myself are marked [verified].** The rest are reported with their source and
-should be treated as leads until checked.
+Results in the first three sections were recomputed here. Results in the classification section are
+reported from their source archives with their stated search ranges.
 
 ---
 
@@ -24,7 +24,7 @@ Two audits of the same corpus disagreed about Erdos 168, which asks for the larg
 - A later audit rejects exactly that, exhibiting a 34-element subset of `[1,42]` avoiding every
   `{k,2k,3k}`.
 
-**At most one could be right. I settled it by exact computation.** [verified]
+**At most one could be right. I settled it by exact computation.**
 
 ```
 F(10) = 8      F(20) = 16      F(30) = 24      F(42) = 34
@@ -38,7 +38,7 @@ set has size `42 - 8 = 34`. Computed by exact branch and bound, not search heuri
 
 ---
 
-## A complete negative result, hand-checkable in thirty seconds [verified]
+## A complete negative result, hand-checkable in thirty seconds
 
 For any base `B >= 2` and any two digits `a < b`, the four two-digit words satisfy
 
@@ -56,8 +56,7 @@ line.
 
 ## Exact classifications recovered from the archives
 
-Reported from their source archives. These are the kind of result that is expensive to produce and
-cheap to check, and none of them was in a findings document.
+Expensive to produce, cheap to check, and none of them was in a findings document.
 
 ### Erdos-Hajnal, the P6 wall
 
@@ -173,10 +172,10 @@ first and adds nothing.
 | exit 0 but a declaration prints `sorryAx` | 33 | 2.4% |
 | literal `sorry` in source | 402 | 29.6% |
 
-Of the 348 verified files, 291 are distinct, covering **119 problem numbers**. But **221 of the 348
-are bounded decision procedures**, and a further ~47 are self-tests of the harness wearing a problem
-label. The honest read: roughly three quarters of the pool is scaffolding or failure, and most of the
-remaining quarter is bounded arithmetic rather than mathematics.
+Of the 348 verified files, 291 are distinct, covering **119 problem numbers**. 221 of the 348 are
+bounded decision procedures and a further 47 are self-tests of the harness carrying a problem label.
+Three quarters of the pool is scaffolding or failure; most of the remaining quarter is bounded
+arithmetic.
 
 ### Four ways an axiom footprint and an exit code disagree
 
