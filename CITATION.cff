@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "For individual results, prefer citing the focused subject repository."
+title: "Erdos archive recovery map"
+authors:
+  - family-names: "Wilder"
+    given-names: "Jared"
+type: dataset
+repository-code: "https://github.com/jaredwilder/erdos-archive-seam"
